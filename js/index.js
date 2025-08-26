@@ -8,7 +8,18 @@ const inputClick = () => console.log("Clicked")
 const mouseOver = () => console.log("Mouse is ready!")
 
 
-const elements = <input placeholder="Help text" onClick={inputClick} onMouseEnter={mouseOver}/>
+const helpText = "Help text!"
+
+
+const elements = (<div>
+    <h1>{helpText}</h1>
+
+
+    <input placeholder={helpText}
+        onClick={inputClick} onMouseEnter={mouseOver}/>
+
+
+</div>)
 const app = document.getElementById("app")
 
 ReactDOM.render(elements, app)

@@ -17,7 +17,7 @@ const elements = (<div>
 
     <input placeholder={helpText}
         onClick={inputClick} onMouseEnter={mouseOver}/>
-
+    <p>{helpText == "Help text!" ? "Yes" : "No"}</p>
 
 </div>)
 const app = document.getElementById("app")

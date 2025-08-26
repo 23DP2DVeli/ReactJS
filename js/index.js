@@ -4,4 +4,7 @@
 //     onMouseEnter: () => console.log("Mouse is ready")
 // }), document.getElementById("app"))
 
-ReactDOM.render(<input placeholder="Help text" />, document.getElementById("app"))
+const elements = <input placeholder="Help text" />
+const app = document.getElementById("app")
+
+ReactDOM.render(elements, app)

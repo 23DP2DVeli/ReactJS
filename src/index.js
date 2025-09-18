@@ -10,14 +10,16 @@ const helpText = "Help text!"
 
 
 
-const Header = () => {
-    return (
+class Header extends React.Component {
+    render() {
+        return (
         <header>Header</header>
     )
+    }
 }
 
 
-function App() {
+const App = () => {
     return (<div className="name">
         <Header />
 

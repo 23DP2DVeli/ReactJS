@@ -13,6 +13,7 @@ class App extends React.Component {
             onClick={this.inputClick} onMouseEnter={this.mouseOver}/>
         <p>{this.helpText === "Help text!" ? "Yes" : "No"}</p>
         <Image image={logo} />
+        <img src={logo}/>
 </div>)
     }
     inputClick () {console.log("Clicked")}

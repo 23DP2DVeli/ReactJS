@@ -9,7 +9,7 @@ import * as ReactDOMClient from 'react-dom/client';
 class Header extends React.Component {
     render() {
         return (
-        <header>Header</header>
+        <header>{this.props.title}</header>
     )
     }
 }
@@ -20,7 +20,9 @@ class App extends React.Component {
     helpText = "Help text!"
     render() {
         return (<div className="name">
-        <Header />
+
+
+        <Header title="Header" />
 
 
         <h1>{this.helpText}</h1>

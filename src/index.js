@@ -16,14 +16,17 @@ const mouseOver = () => console.log("Mouse is ready!")
 
 const helpText = "Help text!"
 
-
-const elements = (<div>
+function App() {
+    return (<div className="name">
     <h1>{helpText}</h1>
     <input placeholder={helpText}
         onClick={inputClick} onMouseEnter={mouseOver}/>
     <p>{helpText === "Help text!" ? "Yes" : "No"}</p>
 
 </div>)
+}
+
+
 
 
 
@@ -31,4 +34,4 @@ const elements = (<div>
 
 const app = ReactDOMClient.createRoot(document.getElementById("app"))
 
-app.render(elements)
+app.render(<App />)

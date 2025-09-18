@@ -10,20 +10,18 @@ const helpText = "Help text!"
 
 
 
-function Header () {
+const Header = () => {
     return (
         <header>Header</header>
     )
 }
 
 
-
-
 function App() {
     return (<div className="name">
         <Header />
 
-        
+
         <h1>{helpText}</h1>
         <input placeholder={helpText}
             onClick={inputClick} onMouseEnter={mouseOver}/>
